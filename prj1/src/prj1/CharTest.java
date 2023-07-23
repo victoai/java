@@ -5,7 +5,9 @@ public class CharTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		char c='a';
+		char c='a';  
+		
+		System.out.println((int)c);
 		
 		c++;		
 		System.out.println(c);
