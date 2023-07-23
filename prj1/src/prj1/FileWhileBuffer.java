@@ -10,8 +10,8 @@ public class FileWhileBuffer {
 	public static void main(String[] args) throws IOException {
 		
 		
-		FileInputStream srcFis = new  FileInputStream( "data.txt" );	 
-		FileOutputStream copyFos = new FileOutputStream( "data-copy5.txt" );
+		FileInputStream srcFis = new  FileInputStream( "res/data.txt" );	 
+		FileOutputStream copyFos = new FileOutputStream( "res/data-copy6.txt" );
 		
 	 
 		//buffer사용하기
