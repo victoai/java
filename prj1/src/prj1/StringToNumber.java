@@ -7,6 +7,7 @@ public class StringToNumber {
         System.out.println("숫자로 변환된 값: " + number);
     }
 
+    
     public static int convertToNumber(String str) {
         if (!isNumericString(str)) {
             throw new IllegalArgumentException("유효하지 않은 숫자 문자열입니다: " + str);
