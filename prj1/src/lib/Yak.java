@@ -10,7 +10,8 @@ public class Yak {
 			int[] yak = new int[20]; 
 
 	        int j = 0; // 배열시작 0...19
-	        for (int i = 1; i <= num; i++) {   //   i:  12  => 12/1  ~12/12   
+	        int m = num/2;
+	        for (int i = 1; i <= m; i++) {   //   i:  12  => 12/1  ~12/12   
 	            if (num % i == 0){//약수 구하는식 
 	                yak[j] = i; // i 가 배열에 들어가게함
 	                j++;	
@@ -19,8 +20,9 @@ public class Yak {
 	        
 	        //j가 약수의개수
 	        
-	        int[] yak_result= new int[j];	        
-	        System.arraycopy(yak, 0, yak_result, 0, j);
+	        yak[j]=num;
+	        int[] yak_result= new int[j+1];	        
+	        System.arraycopy(yak, 0, yak_result, 0, j+1);
 	        
 	        System.out.println(   Arrays.toString(yak));
 	        return yak_result;
