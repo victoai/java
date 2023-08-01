@@ -10,13 +10,7 @@ public class OpenableTest {
 		 ArrayList<Openable> list = new ArrayList<>();		 
 		 list.add( new Blackcar());
 		 list.add( new Redcar());
-		 
-		 
-		 
-		 
-		 
-		 
-		 
+		  
 
 	}
 
