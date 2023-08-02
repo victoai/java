@@ -8,6 +8,7 @@ public class CarProgram {
 		cars[1]= new Bluecar();
 		cars[2]= new Blackcar();
 		
+		
 		for(int i=0;i<cars.length;i++) {
 			cars[i].go();
 			if(cars[i] instanceof Redcar){
