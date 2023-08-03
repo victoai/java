@@ -13,6 +13,8 @@ public class FileWriterEx {
 		w.write("안녕하세요 파일이 써지네요!!!");
 
 		w.flush();
+		
+		
 	}
 
 }

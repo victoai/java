@@ -20,7 +20,7 @@ public class FileReader고객 {
 		    while( true){
 		    	
 		    	
-		    	String line  = br.readLine();		    	
+		    	String line  = br.readLine();	    	
 		 
 		    	if(  line == null) break;		 
 				
