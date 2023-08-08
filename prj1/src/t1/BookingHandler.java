@@ -1,6 +1,7 @@
 package t1;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class BookingHandler {
 	
@@ -12,6 +13,26 @@ public class BookingHandler {
 		
 		//사용자로 부터 정보를 받는다. 예약 정보를 보여준다
 		// 지역, 여행지, 호텔, 날짜 선택후 예약 객체 생성
+		
+		//지역을 선택하게 한다
+		
+		 String area= Arrays.toString(BookingInfo.area);
+		 System.out.println( area);
+		 
+		 // 
+		 //선택하게 한다
+		 
+		 String hotel= Arrays.toString(BookingInfo.hotel);
+		 System.out.println( hotel);
+		 
+		 
+		 //선택하게 한다
+		 
+		 String days= Arrays.toString(BookingInfo.days);
+		 System.out.println( days);
+		 
+		 //선택하게 한다
+		
 		Booking booking = new Booking();		
 		list.add(booking);		
 	}

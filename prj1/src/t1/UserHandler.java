@@ -1,6 +1,8 @@
 package t1;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 public class UserHandler {
 	
@@ -20,6 +22,7 @@ public class UserHandler {
 	}
 	
 	void showUsers(){
+		System.out.println(" 고객정보 전체 조회");
 		for( User user : list){
 			System.out.println( user);
 		}
@@ -46,5 +49,20 @@ public class UserHandler {
 		//ObjectOutputStream os  = new ObjectOutputStream( new FileWriter( "res/output.txt");		
 	}
 	
+	
+	public void ShowOrderingName(){
+		
+		Collections.sort( list, new Comparator<User> () {
+
+			@Override
+			public int compare(User o1, User o2) {
+				return o1.getName().compareTo(o2.getName());   // 문자열의 비교
+			}}); 
+		
+		
+		//전체조회
+		showUsers();
+		
+	}
 
 }
