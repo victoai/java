@@ -39,7 +39,7 @@ public class ProductHandler {
 		//
 		
 		//
-		 //상품정보  색조 3행
+		 //상품정보  색조 2행
 		list[2][0]= new Product();
 		list[2][1]= new Product();
 		list[2][2]= new Product();
