@@ -1,6 +1,6 @@
-package thread.동기화;
+package thread.비동기문제;
 
-public class Main2 {
+public class 자원공유문제_비동기_해결방법 {
 
 	
 	
@@ -8,23 +8,24 @@ public class Main2 {
 	 
 	
 	
-	public   void  run1(){
+	public    void  run1(){
 		
 		 Thread t = new Thread(  new Runnable(){
 
 			@Override
-			public void run() {
+			public  void run() {
 			
-				for( int i=0;i<10000; i++)
+				for( int i=0;i<100; i++)
 				{
 					
 					//블럭동기화 
-					
-					 synchronized (this) {
+					synchronized(this){
+				 
 						    sum= sum+1;
-							System.out.println( "t"+  i    +   sum); 
-						
+						    System.out.println( "t1"+  i    +   sum); 
 					}
+						
+					 
 					
 				}
 			} 
@@ -37,7 +38,7 @@ public class Main2 {
 	}
 	
 	
-	public  void run2(){
+	public   void run2(){
 		
 		
 	 
@@ -48,12 +49,14 @@ public class Main2 {
 			 
 			 
 			@Override
-			public void run() {
-				for( int i=0;i<10000; i++)
+			public    void run() {
+				for( int i=0;i<100; i++)
 				{
-					
+					synchronized(this){
 					sum= sum+1;
 					System.out.println( "t2"+   i +"= "+    sum); 
+					}
+					
 				}
 			} 
 			
@@ -65,7 +68,7 @@ public class Main2 {
 	
 	public static void main(String[] args) {
 		
-		Main2 m = new Main2();
+		자원공유문제_비동기_해결방법 m = new 자원공유문제_비동기_해결방법();
 		m.run1();
 		m.run2();
 		
