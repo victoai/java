@@ -1,4 +1,4 @@
-package java2.generic.test;
+package java2.lamda.test;
  
 
 import java.util.function.Supplier;

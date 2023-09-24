@@ -14,9 +14,7 @@ public class ArrayListForEach {
 		arrys.add(b);
 		arrys.add(c);
 		
-		
-	
-		
+		 
 		
 		//1.
 		class ConsumerImp implements Consumer<Student>{

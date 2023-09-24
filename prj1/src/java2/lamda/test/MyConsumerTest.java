@@ -1,4 +1,4 @@
-package java2.generic.test;
+package java2.lamda.test;
 
 interface MyConsumer{
 	void accept(Object str); //  

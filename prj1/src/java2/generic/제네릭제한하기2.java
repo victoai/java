@@ -1,9 +1,9 @@
-package java2.generic.arraylist;
+package java2.generic;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListTest {
+public class 제네릭제한하기2 {
 
 	public static void main(String[] args) {		
 		ArrayList<String> list = new ArrayList<>();

@@ -1,4 +1,4 @@
-package MyArrays;
+package java2.interfaceEx.myarrays;
 
 import java.util.Comparator;
 

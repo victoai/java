@@ -16,7 +16,7 @@ public class GenericPrinterMaterial<T extends Material> {
 	}
 	
 	public static void main(String[] args) {
-		 GenericPrinterMaterial<Powder> printer = new GenericPrinterMaterial<>();
+		GenericPrinterMaterial<Powder> printer = new GenericPrinterMaterial<>();
 		printer.setMaterial(new Powder());
 		printer.print();
 		  
