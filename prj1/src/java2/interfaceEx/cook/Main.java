@@ -5,6 +5,9 @@ import java.util.ArrayList;
 public class Main {
 
 	public static void main(String[] args) {
+		
+		
+	 
 
 		//Cook형을 담을 수 있는 ArrayList를 준비한다
 		ArrayList<Cook> list = new ArrayList<Cook>();
@@ -20,9 +23,8 @@ public class Main {
 		list.add(new pgh_Koreanfood("박근현"));
 		list.add(new shCook("윤성혁"));
 		list.add(new SunCook("김선명"));
-		list.add(new Cookus("장의수"));
-		list.add(new Cookus("장의수"));
-		list.add(new Cookus("장의수"));
+		list.add(new Cookus("장의수"));		 
+		list.add(new Cookus("홍윤성"));
 		list.add(new LswCook("이승원"));
 		list.add(new bumjunCook("최범준"));
 		list.add(new MinaCook("김민아"));
