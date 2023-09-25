@@ -2,6 +2,8 @@ package java2.lamda.test;
 
 import java.util.function.Consumer;
 
+ 
+
 @FunctionalInterface
 interface MyConsumer2<T> {
 	void accept(T str); // 입력이 있고 반환이 없다.
